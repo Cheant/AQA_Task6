@@ -7,11 +7,16 @@ namespace Task6
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(DateTime.Now.ToString("HH:mm:ss"));
-            Console.WriteLine(DateTime.Now.ToString("mm"));
+            Console.WriteLine($"Please enter a number of bulbs in the garlands:");
+            int bulbsCount = Validation.GetValidBulbsCount();
 
-            int x = Convert.ToInt32(DateTime.Now.ToString("mm"));
-            Console.WriteLine(x);
+            Console.WriteLine($"{Environment.NewLine}Simple Garland:{Environment.NewLine}");
+            SimpleGarland simpleGarland = new SimpleGarland(bulbsCount);
+            simpleGarland.PrintStateOfGarland();
+
+            Console.WriteLine($"{Environment.NewLine}Color Garland:{Environment.NewLine}");
+            ColorGarland colorGarland = new ColorGarland(bulbsCount);
+            colorGarland.PrintStateOfGarland();
 
             Console.ReadKey();
         }

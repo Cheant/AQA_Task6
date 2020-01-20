@@ -1,15 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Task6Library
 {
-    public class Garland
+    public abstract class Garland
     {
         public List<Bulb> Bulbs = new List<Bulb>();
-        protected const int LightsCount = 12;
 
-        public void PrintStateOfLights()
-        { }
+        public void PrintStateOfGarland()
+        {
+            foreach (var bulb in Bulbs)
+            {
+                Console.WriteLine(bulb);
+            }
+        }
     }
 }

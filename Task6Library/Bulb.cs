@@ -1,11 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Task6Library
+﻿namespace Task6Library
 {
     public class Bulb
     {
+        public int BulbID { get; set; }
+        public State State { get; set; }
 
+        public override string ToString()
+        {
+            return BulbID.ToString() + ". " + State.ToString();
+        }
     }
 }
