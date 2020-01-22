@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7C530CB5-534E-4690-8B2D-8653384F054A}</ProjectGuid>
+    <ProjectGuid>{152CB398-2898-40BA-AEFC-77E250F06337}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Task6</RootNamespace>
     <AssemblyName>Task6</AssemblyName>
@@ -51,7 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Task6Library\Task6Library.csproj">
-      <Project>{bdc37203-1bbe-4bad-ab0f-09634674b5d5}</Project>
+      <Project>{f11a41d9-eec1-4017-a33c-baef873f0dc9}</Project>
       <Name>Task6Library</Name>
     </ProjectReference>
   </ItemGroup>

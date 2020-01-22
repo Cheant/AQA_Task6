@@ -3,7 +3,7 @@ using Task6Library;
 
 namespace Task6
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {

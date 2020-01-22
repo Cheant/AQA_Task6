@@ -2,7 +2,7 @@
 
 namespace Task6Library
 {
-    public class ColorGarland : Garland
+    public class ColorGarland : Garland<ColorBulb>
     {
         public ColorGarland(int bulbsCount)
         {

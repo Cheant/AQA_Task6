@@ -2,7 +2,7 @@
 
 namespace Task6Library
 {
-    public class SimpleGarland : Garland
+    public class SimpleGarland : Garland<Bulb>
     {
         public SimpleGarland(int bulbsCount)
         {

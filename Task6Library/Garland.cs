@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace Task6Library
 {
-    public abstract class Garland
+    public abstract class Garland<TBulbType> where TBulbType : Bulb
     {
-        public List<Bulb> Bulbs = new List<Bulb>();
+        public List<TBulbType> Bulbs = new List<TBulbType>();
 
         public void PrintStateOfGarland()
         {
